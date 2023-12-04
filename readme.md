@@ -1,4 +1,4 @@
-<strong>NOTE</strong>: My class names are kinda messed up since I changed it halfway. I'm trying to find the naming sense that is suited for me.  <br> Anyways, here's the log! <br>
+<strong>NOTE</strong>: My class names are kinda messed up since I changed them halfway. I'm trying to find a naming sense that is suited for me.  <br> Anyways, here's the log! <br>
 12/02/2023 <br>
 <strong><i>Mark up + CSS</i></strong> <br> 
 Finished Nav/hero/about sections
