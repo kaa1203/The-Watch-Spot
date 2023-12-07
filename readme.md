@@ -15,7 +15,11 @@ Tablet (65%)
 Finished tablet view
 Monitor (80%) <br>
 12/06/2023 <br>
-Finished the all the markups
+Finished the all the markups <br>
+Added some hover effects<br>
+12/07/2023 <br>
+Added vanilla js and mobile nav <br>
+Catalog modal(10%)
 
 never forgetti https://www.youtube.com/watch?v=ZFH0ny9_GzU
 

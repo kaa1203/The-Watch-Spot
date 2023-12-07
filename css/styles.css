@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     color: var(--black);
@@ -24,7 +28,7 @@ body {
 }
 
 .container {
-    max-width: 375px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -117,10 +121,19 @@ body {
     border: 1px solid var(--white-transparent) !important;
 }
 
+
+.is-hidden {
+    display: none;
+}
+
 /* nav */
 
 .menu {
     display: none;
+}
+
+.mobile-container {
+    padding: 0 20px;
 }
 
 .mobile-menu {
@@ -189,6 +202,11 @@ body {
     margin-right: 12px;
 }
 
+.slider-button:hover {
+    border: 1px solid var(--white-transparent);
+    cursor: pointer;
+}
+
 .slider-button .icon {
     width: 18px;
     height: 18px;
@@ -216,8 +234,60 @@ body {
     content: '';
     display: block;
     background: url(../images/hero-6.png) no-repeat center/cover;
-    max-width: 335px;
+    /* max-width: 335px; */
     height: 410px;
+}
+
+.menu .list {
+    transition: font-size ease-in-out .5s;
+}
+
+.menu .list:hover {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+/* modal */
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.mobile-nav.is-hidden {
+    transform: translateY(-100%);
+}
+
+.mobile-container {
+    padding-top: 28.6px;
+    color: var(--white);
+    background-color: var(--dark-green);
+    width: 100vw;
+    height: 100vh;
+    transition: transform 250ms ease-in-out;
+}
+
+.modal-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.mobile-nav-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    text-transform: uppercase;
+}
+
+.mobile-nav-list .item {
+    margin-bottom: 18px;
 }
 
 /* section one */
@@ -246,7 +316,7 @@ body {
 }
 
 .about .showcase {
-    max-width: 335px;
+    /* max-width: 335px; */
     height: 365px;
 }
 
@@ -268,10 +338,11 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    cursor: pointer;
 }
 
 .image-wrapper {
-    margin: 43px 30px;
+    padding: 43px 30px;
 }
 
 .info-title {
@@ -284,10 +355,55 @@ body {
 
 .catalog-button {
     align-self: end;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+.catalog-button:hover {
+    border: 1px solid var(--black);
 }
 
 .catalog .item:nth-child(8) ~ li {
     display: none;
+}
+
+.catalog .item:hover .image-wrapper {
+    background: rgb(0, 0, 0, 0.2);
+}
+
+/* modal */
+
+.catalog-modal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.catalog-modal .container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20px;
+    color: var(--black);
+    background-color: var(--white);
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.catalog-modal .icon {
+    align-self: end;
+}
+
+.catalog-modal .image-wrapper {
+    padding: 25px 0;
+}
+
+.catalog-modal .content {
+    border: 1px solid firebrick;
 }
 
 /* new */
@@ -303,6 +419,7 @@ body {
 
 .new-watches {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
 }
@@ -317,7 +434,7 @@ body {
 
 .sale-watches {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
 }
 
@@ -327,7 +444,16 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    max-width: 80px;
+    /* max-width: 80px; */
+}
+
+.sale .icon {
+    width: 16px;
+}
+
+.description .title:hover, 
+.details .title:hover {
+    cursor: pointer;
 }
 
 .sale-watch {
@@ -413,12 +539,21 @@ body {
 }
 
 .contact {
+    display: block;
     margin-bottom: 20px;
 }   
+.footer .contact:hover,
+.footer-list .item:hover {
+    text-decoration: underline;
+}
 
 .footer-icon {
     display: flex;
     gap: 14px;
+}
+
+.footer .button:hover {
+    border: 1px solid var(--white);
 }
 
 .footer .button {
@@ -452,7 +587,7 @@ body {
     /* general */
     
     .container {
-        max-width: 768px;
+        max-width: 850px;
         padding: 0 32px;
     }
 
@@ -556,9 +691,9 @@ body {
         flex-direction: row;
     }
 
-    .about .text p:first-child {
+    /* .about .text p:first-child {
         max-width: 220px;
-    }
+    } */
 
     .about .showcase {
         max-width: none;

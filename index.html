@@ -21,7 +21,7 @@
                         <div class="logo"></div>
                         <p class="logo-text">thewatchspot</p>
                     </div>
-                    <svg class="icon">
+                    <svg class="icon" id="mobileMenu">
                         <use href="images/icons.svg#menu"></use>
                     </svg>
                 </div>
@@ -33,35 +33,48 @@
                     </div>
                     <ul class="menu-list">
                         <li class="list">
-                            <a href="#" class="link">about us</a>
+                            <a href="#about" class="link">about us</a>
                         </li>
                         <li class="list">
-                            <a href="#" class="link">catalog</a>
+                            <a href="#catalog" class="link">catalog</a>
                         </li>
                         <li class="list">
-                            <a href="#" class="link">sale</a>
+                            <a href="#sale" class="link">sale</a>
                         </li>
                     </ul>
                     <div class="menu-contact">
-                        <a href="#" class="link button">+380 (68) 443-94-26</a>
+                        <a href="tel:+380 (68) 443-94-26" class="link button">+380 (68) 443-94-26</a>
                     </div>
                 </nav>
             </div>
         </section>
 
-        <!-- <div class="mobile-nav is-hidden">
-            <div class="mobile container">
-                <div class="menu">
+        <div class="mobile-nav is-hidden" id="mobileNav">
+            <div class="mobile-container">
+                <div class="modal-menu">
                     <div class="logo-wrapper">
                         <div class="logo"></div>
                         <p class="logo-text">thewatchspot</p>
                     </div>
-                    <svg class="icon">
+                    <svg class="icon" id="mobileClose">
                         <use href="images/icons.svg#x"></use>
                     </svg>
                 </div>
+                <div class="mobile-nav-wrapper">
+                    <ul class="mobile-nav-list list">
+                        <li class="item">
+                            <a href="#about" class="link">About Us</a>
+                        </li>
+                        <li class="item">
+                            <a href="#catalog" class="link">Catalog</a>
+                        </li>
+                        <li class="item">
+                            <a href="#sale" class="link">Sale</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div> -->
+        </div>
     </header>
 
     <main>
@@ -125,7 +138,7 @@
             </div>
         </section>
 
-        <section class="about section">
+        <section class="about section" id="about">
             <div class="container">
                 <div class="paragraph">
                     <h2 class="heading-two">
@@ -148,7 +161,7 @@
             </div>
         </section>
 
-        <section class="catalog section">
+        <section class="catalog section" id="catalog">
             <div class="container">
                 <div class="title">
                     <h2 class="heading-two">
@@ -266,9 +279,23 @@
                     </li>
                 </ul>
                 <div class="catalog-button">
-                    <a href="javascript: void(0);" class="link button">buy now</a>
+                    <a href="javascript: void(0);" class="link button" id="buyButton">buy now</a>
                 </div>
             </div>
+
+            <div class="catalog-modal is-hidden" id="catalogModal">
+                <div class="container">
+                    <svg class="icon" id="catalogClose">
+                        <use href="images/icons.svg#x"></use>
+                    </svg>
+                    <div class="content">
+                        <div class="image-wrapper">
+                            <img src="images/catalog-1.png" alt="wrist watch" class="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section class="new section">
@@ -290,7 +317,7 @@
             </div>
         </section>
 
-        <section class="sale section">
+        <section class="sale section" id="sale">
             <div class="container">
                 <div class="title">
                     <h2 class="heading-two">
@@ -375,7 +402,7 @@
                 <div class="footer-nav">
                     <div class="footer-address">
                         <div class="logo"></div>
-                        <p class="contact">+380 (68) 443-94-26</p>
+                        <a href="tel:+380 (68) 443-94-26" class="link contact">+380 (68) 443-94-26</a>
                         <p class="address">
                         1678 S. Pioneer Road <br>
                         Salt Lake City<br>
@@ -386,13 +413,13 @@
                     <div class="footer-list-wrapper">
                         <ul class="footer-list list">
                             <li class="item">
-                                <a href="#" class="link">About Us</a>
+                                <a href="#about" class="link">About Us</a>
                             </li>
                             <li class="item">
-                                <a href="#" class="link">Catalog</a>
+                                <a href="#catalog" class="link">Catalog</a>
                             </li>
                             <li class="item">
-                                <a href="#" class="link">Sale</a>
+                                <a href="#sale" class="link">Sale</a>
                             </li>
                         </ul>    
                     </div>
@@ -426,5 +453,7 @@
             </div>
         </section>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
