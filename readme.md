@@ -1,4 +1,4 @@
-**NOTE: My class names are kinda messed up since I changed them halfway. Also, I'm trying to find a naming sense that is suited for me. Also, I don't know the right breakpoint for the monitor version, so my padding/gap did not follow the figma 100%<br> Anyways, here's the log!** <br>
+**NOTE: My class names are kinda messed up since I changed them halfway. I'm trying to find a naming sense that is suited for me. Also, I don't know the right breakpoint for the monitor version, so my padding/gap did not follow the figma 100%<br> Anyways, here's the log!** <br>
 
 ---
 
