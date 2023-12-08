@@ -119,11 +119,6 @@ body {
     fill: currentColor;
 }
 
-.inactive {
-    border: 1px solid var(--white-transparent) !important;
-}
-
-
 .is-hidden {
     display: none !important;
 }
@@ -180,7 +175,7 @@ body {
 
 .slider {
     display: flex;
-    flex-flow: wrap column;
+    flex-flow: wrap row;
     justify-content: center;
     background-color: var(--dark-green);
     overflow: hidden;

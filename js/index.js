@@ -10,6 +10,8 @@ const saleAcc = document.getElementsByClassName("sale-title");
 const saleCon = document.getElementsByClassName("sale-content");
 const catDet = document.getElementsByClassName("catalog-details-wrapper");
 const catItem = document.getElementsByClassName("catalog-item");
+const sliderPic = document.getElementsByClassName("slider-item");
+const sliderPage = document.getElementsByClassName("slider-page");
 
 // Menu
 menu.addEventListener('click', function () {
@@ -66,4 +68,27 @@ function colFunc(n) {
 
     saleAcc[n].classList.toggle("border");
     saleCon[n].classList.toggle("collapse");
+}
+
+// Slideshow
+let index = 1; //set the default value
+slideShow(index); //give value(1) to slideshow function
+
+function pagination(n) { //fetch the value from button (-1/1)
+    slideShow(index += n); //add the value to slideshow function
+}
+
+function slideShow(n) { //fetch the value from pagination and index
+    if (n > sliderPic.length) { //if the value is greater than 5
+        index = 1;              //reset the value to 1
+    }
+    if (n < 1) { //if value is less than 1, make the total number of slides 
+        index = sliderPic.length; // the default number (5)
+    }
+
+    for (let i = 0; i < sliderPic.length; i++) { //loop through item, increment
+        sliderPic[i].classList.add("is-hidden"); //hide other/prev slide pics
+    }
+    sliderPic[index - 1].classList.remove("is-hidden"); //unhide current slide
+    sliderPage[0].innerText = "0" + index; //change the value of the page
 }

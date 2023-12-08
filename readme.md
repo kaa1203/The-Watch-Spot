@@ -1,4 +1,4 @@
-**NOTE: My class names are kinda messed up since I changed them halfway. I'm trying to find a naming sense that is suited for me. I don't know the right breakpoint for the monitor version, so my padding/gap did not follow the figma 100%<br> Anyways, here's the log!** <br>
+**NOTE: My class names are kinda messed up since I changed them halfway. Also, I'm trying to find a naming sense that is suited for me. Also, I don't know the right breakpoint for the monitor version, so my padding/gap did not follow the figma 100%<br> Anyways, here's the log!** <br>
 
 ---
 
@@ -23,7 +23,8 @@ Catalog modal(10%) <br>
 12/08/2023 <br>
 Finished catalog modal/accordion/details <br>
 Added some js <br>
-Added the favicon
+Added the favicon <br>
+Finished Slideshow through pagination not auto yet :( <br>
 
 never forgetti https://www.youtube.com/watch?v=ZFH0ny9_GzU
 
