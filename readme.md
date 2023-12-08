@@ -19,7 +19,11 @@ Finished the all the markups <br>
 Added some hover effects<br>
 12/07/2023 <br>
 Added vanilla js and mobile nav <br>
-Catalog modal(10%)
+Catalog modal(10%) <br>
+12/08/2023 <br>
+Finished catalog modal/accordion/details <br>
+Added some js <br>
+Added the favicon
 
 never forgetti https://www.youtube.com/watch?v=ZFH0ny9_GzU
 
