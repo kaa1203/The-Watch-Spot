@@ -446,6 +446,7 @@ body {
 
 .catalog-modal .icon {
     position: relative;
+    top: 0;
     left: 92%;
     margin-bottom: 8px;
     cursor: pointer;
