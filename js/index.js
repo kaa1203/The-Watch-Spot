@@ -10,6 +10,7 @@ const saleAcc = document.getElementsByClassName("sale-title");
 const saleCon = document.getElementsByClassName("sale-content");
 const catDet = document.getElementsByClassName("catalog-details-wrapper");
 const catItem = document.getElementsByClassName("catalog-item");
+const catCheck = document.getElementsByClassName("catalog-checkbox");
 const sliderPic = document.getElementsByClassName("slider-item");
 const sliderPage = document.getElementsByClassName("slider-page");
 
@@ -46,6 +47,19 @@ for (let i = 0; i < catItem.length; i++) {
     catItem[i].addEventListener('mouseout', function () {
         catDet[i].classList.add("is-hidden");
     });
+
+    catItem[i].addEventListener('click', function () {
+        let heart = catItem[i].children[1].children[1].children[0];
+    
+        if (catCheck[i].checked === true) {
+            catCheck[i].checked = false;
+            heart.setAttribute("href", "images/icons.svg#heart-one");
+        } else {
+            catCheck[i].checked = true;
+            heart.setAttribute("href", "images/icons.svg#heart-two");
+        }
+            
+    });
 }
 
 window.addEventListener('click', function (event) {
@@ -78,7 +92,7 @@ function pagination(n) { //fetch the value from button (-1/1)
     slideShow(index += n); //add the value to slideshow function
 }
 
-function slideShow(n) { //fetch the value from pagination and index
+function slideShow(n) { //fetch the value from pagination or index
     if (n > sliderPic.length) { //if the value is greater than 5
         index = 1;              //reset the value to 1
     }
@@ -92,3 +106,7 @@ function slideShow(n) { //fetch the value from pagination and index
     sliderPic[index - 1].classList.remove("is-hidden"); //unhide current slide
     sliderPage[0].innerText = "0" + index; //change the value of the page
 }
+
+
+
+
