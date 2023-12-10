@@ -24,7 +24,7 @@ Catalog modal(10%) <br>
 Finished catalog modal/accordion/details <br>
 Added some js <br>
 Added the favicon <br>
-Finished Slideshow though pagination not auto yet :( <br>
+Finished Slideshow through pagination (not auto yet :( ) <br>
 Added the favorite function
 
 Also here to brighten your day: <br>
